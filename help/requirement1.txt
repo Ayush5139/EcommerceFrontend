@@ -1,0 +1,53 @@
+
+
+
+
+
+
+ecommerce
+	
+
+	requirement/scope of the project 
+		=> what needs to be done
+		=> amount of work, which features
+
+
+
+
+
+
+1. user registration
+
+
+2. user login
+
+3. website should show products in list
+
+4. website shoulw show products in list under category
+	category means fashion, electronics, home appliances
+
+5. when user selects one product, we should be able to 
+displays its details 
+
+6. show list of products based product name provided by user, 
+
+7. filter list of products based prices range 
+	prices range => between 100, 200
+
+8. we should be able to add products to cart / remove from cart 
+
+9. we should see list of products inside cart
+
+10. we should be able to buy products by clicking on buy button
+
+
+
+11. we can have wishlist also, we should be able to add products to it and move them to cart
+
+
+
+
+
+
+
+

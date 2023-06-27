@@ -1,0 +1,67 @@
+
+.feachild{
+    width: 320px;
+    height: 180.71px;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.feachild:hover{
+    border: 0.5px solid #2E90E5;
+}
+
+.feadiv{
+    display: flex;
+    width: 1200px;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+
+.linktt{
+    text-decoration: none;   
+}
+
+.fea-div1-image{
+    height: 80px;
+    width: 100px;
+    padding: 10px;
+}
+
+.fea-div1-title{
+    color: black;
+    font-size: 15px;
+    width: 180px;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.fea-div1-price{
+    color: red;
+}
+
+.leftbtn{
+    background-color: white;
+    cursor: pointer;
+}
+
+.feadiv1{
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .feadiv{
+        display: none;
+        width: 480px;
+        justify-content: space-around;
+        margin-left: 1%;
+    }
+    .feadiv1{
+        display: flex;
+        width: 450px;
+        justify-content: space-around;
+        margin-left: 3%;
+    }
+    
+}

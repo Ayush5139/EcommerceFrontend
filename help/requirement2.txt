@@ -1,0 +1,83 @@
+1. user registration
+
+	a. user fills a form
+		in form we have fields as
+			name
+			age
+			gender
+			email
+			password
+
+	b. user will click on submit button
+
+	c. after clicking on submit button, POST /users/register API will be called with all of the user data
+
+	d. Inside nodejs server,  /users/register API route will call controller function.
+
+	e. inside controller function
+		we should check if email already exists in UserModels, if yes 
+			then throw error saying email is already register and status code 400
+
+		if no then proceed
+
+		we should covert password string to hash using bcrypt library
+
+		we should save all of the data inside the User Model in mongodb
+
+		we should return 200 status code with message 
+		"user created succesfully"
+
+	f. UI/reactjs will show response of the /users/register API
+		if it is error,	 then show error message
+
+		if it is success, then show success message
+
+
+
+user login
+1. form filled and call API
+	email and password
+2. inside controller
+	1. first we check if user exists or not in database
+	2. to compare password with the hash that we have saved in database
+	3. to create a jwt token with userId, name and email
+	4. send 200 status code with token
+3. we save this token in reactjs
+
+
+
+
+jwt token
+
+why to do we need this token ?
+	to achieve authentication ?
+
+    
+GET /cart/getProduction 
+
+we need to send 
+user data in the API
+	using tokens
+
+ 	directly send the email
+
+	[
+		smartwatch1,
+		smartwatch2
+	]
+
+
+my session gets expires
+	=> token is expired 
+
+
+nodejs stateless  
+
+REST API are stateless
+
+
+
+
+
+
+

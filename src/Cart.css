@@ -1,0 +1,183 @@
+.cartdiv1{
+    background-color: #F6F7F8;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+}
+
+.cartname{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.cartmap{
+    display: flex;
+    margin-left: 280px;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.cartmap1{
+    display: flex;
+    margin-left: 280px;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.cartmapimg{
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+}
+
+.cartmapbtn{
+    height: 22px;
+    border-radius: 500px;
+}
+
+.cartmaptitle{
+    font-size: 15px;
+    font-weight: bold;
+    width: 350px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.cartmapimg1{
+    margin-left: 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cartmapprice{
+    margin-left: 45px;
+    width: 80px;
+}
+
+.cartmapprice1{
+    margin-left: 440px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cartmapcount{
+    margin-left: 50px;
+    width: 20px;
+}
+
+.cartmapunit{
+    margin-left: 100px;
+    width: 50px;
+}
+
+.cartmapcount1{
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cartmapunit1{
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;  
+}
+
+.cartmain2{
+    display: flex;
+}
+
+.main2mini2{
+    margin-left: 430px;
+    font-size: 15pX;
+}
+
+.main2mini1{
+    margin-left: 340px;
+    margin-top: 90px;
+}
+
+.mini1input{
+    height: 40px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.mini1btn{
+    height: 46px;
+    background-color: #33A0FF;
+    border-radius: 0px 4px 4px 0px;
+    border: 0px;
+    color: white;
+}
+
+.carttotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:480px){
+    .cartmap{
+        display: flex;
+        margin-left: 0px;
+        padding-bottom: 2%;
+    }
+
+    .cartmap1{
+        display: none;
+        margin-left: 280px;
+        align-items: center;
+        padding-bottom: 2%;
+    }
+    
+    .cartmapunit1{
+        margin-left: 30px;
+        font-size: 25px;
+        font-weight: bold;  
+    }
+    .cartmapprice{
+        margin-left: 0px;
+        width: 20px;
+    }
+    .cartmapcount{
+        margin-left: 50px;
+        width: 5px;
+    }
+    
+    .cartmapunit{
+        margin-left: 30px;
+        width: 10px;
+    }
+    .cartmapimg{
+        height: 80px;
+        width: 80px;
+        margin-left: 0px;
+        padding: 15px;
+    }
+    .cartmaptitle{
+        font-size: 15px;
+        font-weight: bold;
+        width: 150px;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .cartmain2{
+        display: block;
+    }
+
+    .main2mini1{
+        margin-left: 0px;
+        margin-top: 90px;
+    }
+
+    .main2mini2{
+        width: 300px;
+        margin-left: 80px;
+        margin-top: 20px;
+        font-size: 15pX;
+    }
+    
+}
