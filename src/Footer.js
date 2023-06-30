@@ -6,6 +6,7 @@ import card1 from './master_card.jpg'
 import card2 from './Paypal.jpg'
 import card3 from './visa.jpg'
 import card4 from './Western_union.jpg'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -30,40 +31,40 @@ function Footer() {
         <hr className='minidiv-hr'></hr>
         <div className='mini-div3'>
             <ul type = 'none'> <li className='ul-title'>Information</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+                <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
             <ul type = 'none'> <li className='ul-title'>Service</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+            <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
             <ul type = 'none'> <li className='ul-title'>Extras</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+            <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
             <ul type = 'none'> <li className='ul-title'>My Account</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+            <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
             <ul type = 'none'> <li className='ul-title'>Useful Links</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+            <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
             <ul type = 'none'> <li className='ul-title'>Our Offers</li>
-                <li>About Us</li>
-                <li>Information</li>
-                <li>Privacy  Policy</li>
-                <li>Terms & Condition</li>
+            <li><Link to={"/aboutus"} className='linktt'>About Us</Link></li>
+                <li><Link to={"/information"} className='linktt'>Information</Link></li>
+                <li><Link to={"/privacy"} className='linktt'>Privacy  Policy</Link></li>
+                <li><Link to={"/terms"} className='linktt'>Terms & Condition</Link></li>
             </ul>
         </div>
         <hr className='maindiv-hr'></hr>

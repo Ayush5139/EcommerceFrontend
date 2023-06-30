@@ -1,6 +1,6 @@
 .div1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 40px;
     align-items: center;
 }

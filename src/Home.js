@@ -12,7 +12,7 @@ import './Signup.css'
 import img from'./iSHOP Logo.jpg'
 
 function Home() {
-  const [loginTab,setLoginTab] = useState(false)
+  const [loginTab,setLoginTab] = useState(true)
   const [email,setEmail] = useState("")
   const [password,setPassword] = useState("")
   const [message,setMessage] = useState("")
@@ -26,7 +26,7 @@ function Home() {
       setLoginTab(true)
       setLoggedin(false)
     }
-    else{
+    if(sessionStorage.getItem("USER") =="" ||sessionStorage.getItem("USER") ==null ){
       setLoggedin(true)
       setLoginTab(true)
     }
