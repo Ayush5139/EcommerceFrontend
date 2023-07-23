@@ -111,7 +111,7 @@
 @media screen and (max-width:480px){
     .homediv1{
         position: absolute;
-        top: 11.5%;
+        top: 1%;
         right: 35%;
     }
 
@@ -138,5 +138,8 @@
         position: absolute;
         top: 11.5%;
         right: 40%;
+    }
+    hr{
+        width: 100%;
     }
 }

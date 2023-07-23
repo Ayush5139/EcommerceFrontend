@@ -53,15 +53,36 @@
 @media screen and (max-width:480px){
     .feadiv{
         display: none;
-        width: 480px;
+        width: 100%;
         justify-content: space-around;
         margin-left: 1%;
     }
     .feadiv1{
         display: flex;
-        width: 450px;
+        width: 97%;
         justify-content: space-around;
         margin-left: 3%;
+    }
+
+    .feachild {
+        width: 70%;
+        height: 180.71px;
+        border: 0.1px solid black;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .fea-div1-title {
+        color: black;
+        font-size: 15px;
+        width: 100%;
+        height: 50px;
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+    hr{
+        width: 100%;
     }
     
 }

@@ -67,19 +67,42 @@
 @media screen and (max-width:480px){
     .footer-div1{
         display: block;
-        justify-content: space-around ;
-        width: 480px;
+        justify-content: space-around;
+        width: 95%;
         text-align: center;
-        margin-left: 21%;
+        margin-left: 2.5%;
     }
     .mini-div2{
         text-align: center;
-        width: 300px;
+        width: 100%;
+        margin-bottom: 2%;
     }
     .mini-div4{
         display: flex;
         justify-content: space-around;
-        width: 300px;
-        margin-left: 20%;
+        width: 80%;
+        margin-left: 10%;
     }
+    .mini-div3{
+        text-align: left;
+        display: block;
+        justify-content: space-around;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .minidiv-hr{
+        width: 98%;
+        color: #F6F7F8;
+    }
+
+    .mini-div3 ul{
+        width: 75%;
+        margin-left: 19%;
+    }
+
+    hr{
+        width: 100%;
+    }
+
 }

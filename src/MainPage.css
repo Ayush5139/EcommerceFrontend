@@ -87,16 +87,28 @@
 
 @media screen and (max-width:480px){
     .div3{
-        width: 480px;
+        width: 100%;
     }
     .img1{
         height: 90%;
         width: 100%;
         margin-right: 0%;
-        margin-top: 7%;
+        margin-top: 13%;
     }
     .showMorebtn1{
         display: none;
     }
+    .div4{
+        width: 100%;
+    }
+    .main-div1{
+        display: flex;
+        margin-left: 15%;
+        flex-wrap: wrap;
+    }
+    hr{
+        width: 100%;
+    }
+    
 }
 

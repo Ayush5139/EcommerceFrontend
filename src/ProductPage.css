@@ -59,12 +59,12 @@
     
     .productimage{
         height: 300px;
-        width: 220px;
+        width: 50%;
     }
     .producttext{
         font-size: 32px;
         font-weight: 600;
-        width: 400px;
+        width: 90%;
     }
     
     .productttttt{
@@ -84,6 +84,9 @@
         color: white;
         border-radius: 80px;
         margin-left: -18px;
+    }
+    hr{
+        width: 100%;
     }
 }
 

@@ -30,6 +30,13 @@ function Home() {
       setLoggedin(true)
       setLoginTab(true)
     }
+    let allEle = document.getElementsByTagName("*");
+    console.log(allEle);
+    for(let i=0;i<allEle.length;i++){
+      if(allEle[i].offsetWidth > 480 && allEle[i].offsetWidth < 1470){
+        console.log(allEle[i]);
+      }
+    }
   },[count])
 
   function abc123(){
