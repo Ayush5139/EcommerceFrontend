@@ -2,7 +2,6 @@
     margin-top: -24%;
 } */
 .div3{
-    height: 650px;
     background-image:  linear-gradient(67deg, #E71D3A 0%, #ECC7C1 45%, #EFCAC4 58%, #E4BDB8 70%, #42A8FE 100%); 
 }
 
@@ -111,4 +110,12 @@
     }
     
 }
+@media screen and (min-width:480px) and (max-width:768px){
+    .main-div1 {
+        margin-left: 25%;
+    }
 
+    .showMorebtn1 {
+        margin-left: 40%;
+    }
+}

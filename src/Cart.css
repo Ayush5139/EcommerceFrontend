@@ -187,3 +187,67 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:480px) and (max-width:768px){
+    .cartmap1 {
+        display: flex;
+        margin-left: 2%;
+        align-items: center;
+        padding-bottom: 2%;
+        width: 98%;
+    }
+
+    .cartmapimg1 {
+        margin-left: 7%;
+    }
+    .cartmapprice1 {
+        margin-left: 22%;
+    }
+    .cartmapcount1 {
+        margin-left: 6%;
+    }
+    .cartmapunit1 {
+        margin-left: 6%;
+    }
+    .cartmap {
+        width: 98%;
+        margin-left: 2%;
+    }
+    .cartmapimg {
+        margin-left: 2%;
+    }
+
+    .cartmaptitle {
+        width: fit-content;
+        padding-left: 50px;
+    }
+
+    .cartmapprice {
+        margin-left: 12%;
+        width: fit-content;
+    }
+
+    .cartmapcount {
+        margin-left: 15%;
+        width: fit-content;
+    }
+
+    .cartmain2{
+        width: 100%;
+    }
+
+    .cartmapunit {
+        margin-left: 8%;
+    }
+
+    .main2mini1 {
+        margin-left: 2%;
+        margin-top: 5%;
+        display: flex;
+    }
+
+    .main2mini2 {
+        margin-left: 15%;
+        font-size: 15pX;
+    }
+}

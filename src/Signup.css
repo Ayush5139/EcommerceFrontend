@@ -143,3 +143,11 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:480px) and (max-width:768px){
+    .homediv1 {
+        position: absolute;
+        top: 1%;
+        right: 41%;
+    }
+}

@@ -90,3 +90,25 @@
     }
 }
 
+@media screen and (min-width:480px) and (max-width:768px){
+    .productdiv1 {
+        display: flex;
+        margin-left: 10%;
+        width: 90%;
+    }
+    .productttttt {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .producttext {
+        font-size: 32px;
+        font-weight: 600;
+        width: 90%;
+    }
+
+    .addbtn {
+        width:90%;
+    }
+}
+

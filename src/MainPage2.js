@@ -65,7 +65,7 @@ function MainPage2() {
                     <p>More</p>
                 </div>
             </div>
-            <div>
+            <div className='tempdiv'>
                 <div className='mini2div2'>
                     <div className='mini2text'>
                         <p className='mini2texttitle'>iPhone 8</p>

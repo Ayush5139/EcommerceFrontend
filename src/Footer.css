@@ -97,12 +97,25 @@
     }
 
     .mini-div3 ul{
-        width: 75%;
+        width: 40%;
         margin-left: 19%;
     }
 
     hr{
         width: 100%;
     }
+}
 
+@media screen and (min-width:480px) and (max-width:768px){
+    .minidiv-hr {
+        width: 100%;
+    }
+    .mini-div3{
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 95%;
+        margin-left: 2.5%;
+    }
 }

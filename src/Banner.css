@@ -1,5 +1,4 @@
 .banner1{
-    height: 600px;
     background-color: #2E90E5;
 }
 
@@ -122,3 +121,21 @@
     }
     
 }
+
+@media screen and (min-width:480px) and (max-width:768px){
+    .banner-img {
+        width: 62%;
+        margin-left: 38%;
+        margin-top: -32.7%;
+    }
+    .banner33 {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .feadiv {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
