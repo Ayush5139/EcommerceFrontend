@@ -23,48 +23,6 @@ function MainPage2() {
             <p className='cartname'>Store / {data.cat}</p>
         </div>
         <div className='main2div1'>
-            <div>
-                {/* <div className='mini2div1'>
-                    <ul type='none'>
-                        <li className='listtitle'>Accessories</li>
-                        <li>Apple Car</li>
-                        <li>Air Port & Wireless</li>
-                        <li>Cables And Docks</li>
-                        <li>Cases & Flims</li>
-                        <li>Chargin Devices</li>
-                        <li>Connected Home</li>
-                        <li>Headphones</li>
-                    </ul>
-                </div> */}
-                <div className='mini1div2'>
-                    <h2 className='ph2'>Price:</h2>
-                    <p className='prange'>Range:  1-25 </p>
-                    <input type="range" min="1" max="25"  className='slider' />
-                </div>
-                {/* <div className='mini1div3'> */}
-                    {/* <div><h2 className='ph2'>Color:</h2></div>
-                    <div className='mini1div31'>
-                        <div className='color1'></div>
-                        <div className='color2'></div>
-                        <div className='color3'></div>
-                        <div className='color4'></div>
-                        <div className='color5'></div>
-                        <div className='color6'></div>
-                    </div>
-                </div> */}
-                {/* <div className='mini2div1'>
-                    <ul type='none'>
-                        <li className='listtitle'>Brands</li>
-                        <li>Apple</li>
-                        <li>LG</li>
-                        <li>Samsung</li>
-                        <li>Siemes</li>
-                    </ul>
-                </div> */}
-                <div className='minimorediv'>
-                    <p>More</p>
-                </div>
-            </div>
             <div className='tempdiv'>
                 <div className='mini2div2'>
                     <div className='mini2text'>
@@ -80,9 +38,10 @@ function MainPage2() {
                     {
                         filteredData.map((item)=>(
                             <div>
-                                <div className='main2child'><img src={item.image} className='filteredImage'/>
-                                <Link to={`/store/item/${item.title}`} className = 'linktt'><p className='filteredTitle'>{item.title}</p></Link>
-                                <p className='filteredPrice'>{item.price} <span className='prices1'>{((item.price*0.5)+item.price).toFixed(2)}</span></p></div>
+                                
+                                <div className='main2child'><Link to={`/store/item/${item.title}`} className = 'linktt'><img src={item.image} className='filteredImage'/>
+                                <p className='filteredTitle'>{item.title}</p>
+                                <p className='filteredPrice'>{item.price} <span className='prices1'>{((item.price*0.5)+item.price).toFixed(2)}</span></p></Link></div>
                             </div>
                         ))
                     }

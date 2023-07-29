@@ -5,13 +5,33 @@
     align-items: center;
 }
 
+.showMoreDiv{
+    margin-top: 2%;
+}
+
+.timedoutdiv{
+    display: none;
+    font-size: 18px;
+    background-color: #33A0FF;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    height: 30px;
+}
+
+.timedoutdiv p{
+    margin: 0%;
+}
+
 .p1{
     display: flex;
 }
 
 .p2{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
+    left: 80%;
 }
 
 .lang{
@@ -32,8 +52,8 @@
 .div2{
     display: flex;
     justify-content: space-around;
-    width: 50%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .shop-name{
@@ -91,6 +111,10 @@
 .nav__menu-item:hover .nav__submenu {
       display: block;
   }
+
+.extarp{
+    margin: 0%;
+}
 
 
 @media screen and (max-width:480px){

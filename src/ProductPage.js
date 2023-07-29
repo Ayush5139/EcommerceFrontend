@@ -10,13 +10,13 @@ function ProductPage() {
     console.log(data.pname)
     const [finalData,setFinalData] = useState([])
     const [itemID,setItemID] = useState("")
-    const [count,setCount] = useState(0)
+    const [count,setCount] = useState(1)
     useEffect(()=>{ 
       axios.get(`https://ecommercebackend-4lkz.onrender.com/filter/${data.pname}`)
       .then((res)=>{setFinalData(res.data);setItemID(res.data[0]._id)})
     },[])
     console.log(finalData)
-    const [updCount,setUpdCount] = useState(0)
+    const [updCount,setUpdCount] = useState(1)
     function addCount(){
       setUpdCount(updCount+1)
     }
@@ -34,6 +34,10 @@ function ProductPage() {
       console.log(newObj)
       const res = await axios.post("https://ecommercebackend-4lkz.onrender.com/updateOID",{data:newObj})
       .then((res)=>console.log(res))
+      document.querySelector(".addedtocart").style.display = "block"
+      setTimeout(() => {
+        document.querySelector(".addedtocart").style.display = "none"
+      }, 3000);
     } 
 
     useEffect(()=>{
@@ -48,8 +52,15 @@ function ProductPage() {
     console.log("updated count",updCount)
     const userid = sessionStorage.getItem("USER")
     console.log(userid)
+    // function addedtoCart(){
+    //   document.querySelector(".addedtocart").style.display = "block"
+    //   setTimeout(() => {
+    //     document.querySelector(".addedtocart").style.display = "none"
+    //   }, 3000);
+    // }
   return (
     <div>
+      <div className='addedtocart'><p>Added To Cart !!</p></div>
       <Nav/>
       <div className='productdiv1'>
         <div>
