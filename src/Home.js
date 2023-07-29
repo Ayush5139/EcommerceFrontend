@@ -108,6 +108,7 @@ function Home() {
               <Link to={"/user/signup"} className='linktt'><button className='signupbtn1'>Sign Up</button></Link>
             </div>
           </div>
+          <Footer/>
         </div>
       }
     </div>

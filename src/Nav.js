@@ -19,7 +19,7 @@ function Nav(props) {
     useEffect(() => {
         axios.get("https://ecommercebackend-4lkz.onrender.com/otherCartData")
             .then((res) => setCartdata(res.data))
-    }, [])
+    }, [count])
     console.log(carData[0])
     useEffect(() => {
         setItemCount(carData[0])
@@ -79,6 +79,19 @@ function Nav(props) {
                     <div className='showMoreDiv'>
                         <img src={img} />{(clicked) ? <button onClick={showMenu} className="showMoreBtn"><FaAlignJustify /></button> : <button onClick={closeMenu} className="showMoreBtn"><FaTimes /></button>}</div>
                     <div style={{ display: isplay }}>
+                        <p>{(loggedIn) ?
+                            null :
+                            <div>
+                                <div className='p2'>
+                                    <p className='navp1'> <img src={pofileImg} /> Hello. {userName}
+                                        <ul>
+                                            <li onClick={logout} className="logoutbtn">Logout</li>
+                                        </ul>
+                                    </p>
+                                    <Link to="/cart" className='linktt'><p className='navcart1'> <img src={cartImg} /> {itemCount} items {(totalPrice)}</p></Link>
+                                </div>
+                            </div>
+                        }</p><hr></hr>
                         <Link to='/' className='linktt'>  <p className='sub-cat'>Home</p> </Link><hr></hr>
                         <p>Store</p> <hr></hr>
                         <Link to={`/store/men's clothing`} className='linktt'><p>men's clothing</p> </Link> <hr></hr>

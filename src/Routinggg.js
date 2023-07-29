@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import AboutUs from './AboutUs'
 import Cart from './Cart'
+import Checkout from './Checkout'
 import Home from './Home'
 import Information from './Information'
 import Login from './Login'
@@ -27,6 +28,7 @@ function Routinggg() {
             <Route path='/privacy' element={<Privacy/>}/>
             <Route path='/information' element={<Information/>}/>
             <Route path='/terms' element={<Terms/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
     </div>
   )

@@ -117,6 +117,15 @@ button:hover{
     color: white;
 }
 
+.checkoutbtn{
+    height: 46px;
+    background-color: #33A0FF;
+    border-radius:4px;
+    border: 0px;
+    color: white;
+    width: 90%;
+}
+
 .carttotal{
     display: flex;
     justify-content: space-between;

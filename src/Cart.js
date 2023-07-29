@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import Nav from './Nav'
 import './Cart.css'
+import { Link } from 'react-router-dom'
 
 function Cart() {
     const [cartData, setCartData] = useState([])
@@ -70,6 +71,7 @@ function Cart() {
                                     console.log(newObj)
                                     const res2 = await axios.post("https://ecommercebackend-4lkz.onrender.com/updateOID", { data: newObj })
                                         .then((res) => console.log("responseeeeeeeeeee", res))
+                                        setVariable(!variable)
                                 }}>-</button><span>{item.countInCart}</span><button onClick={async (e) => {
                                     e.target.previousSibling.innerText = parseInt(e.target.previousSibling.innerText) + 1; const newObj = {
                                         id: item._id,
@@ -79,6 +81,7 @@ function Cart() {
                                     console.log(newObj)
                                     const res2 = await axios.post("https://ecommercebackend-4lkz.onrender.com/updateOID", { data: newObj })
                                         .then((res) => console.log("responseeeeeeeeeee", res))
+                                        setVariable(!variable)
                                 }}>+</button></p>
                                 <p className='cartmapunit'>{item.price}</p>
                             </div>
@@ -98,6 +101,7 @@ function Cart() {
                     <div className='carttotal'><p>Coupon : </p> <p> No</p></div>
                     <hr></hr>
                     <div className='carttotal'><h1>Total : </h1> <h1>{(price + shippingPrice).toFixed(2)}</h1></div>
+                    <Link to={"/checkout"}><button className='checkoutbtn'>Checkout</button></Link>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ import MainPage2 from './MainPage2';
 import Cart from './Cart';
 import Routinggg from './Routinggg';
 import Signup from './Signup';
+import Checkout from './Checkout';
 
 function App() {
   return (
