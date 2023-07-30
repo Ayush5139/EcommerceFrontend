@@ -62,6 +62,10 @@ function Cart() {
     }
     // Calculate the total price based on the current cartData
     const totalPrice = cartData.reduce((total, item) => total + item.price * item.countInCart, 0);
+    const userid = sessionStorage.getItem("USER")
+    function checkOut() {
+        axios.get(`http://localhost:9000/deleteAll/${userid}`)
+    }
     return (
         <div>
             <Nav />
@@ -106,7 +110,7 @@ function Cart() {
                     <div className='carttotal'><p>Coupon : </p> <p> No</p></div>
                     <hr></hr>
                     <div className='carttotal'><h1>Total : </h1> <h1>{(totalPrice + shippingPrice).toFixed(2)}</h1></div>
-                    <Link to={"/checkout"}><button className='checkoutbtn'>Checkout</button></Link>
+                    <Link to={"/checkout"}><button className='checkoutbtn' onClick={checkOut}>Checkout</button></Link>
                 </div>
             </div>
         </div>
