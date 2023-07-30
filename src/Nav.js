@@ -108,7 +108,7 @@ function Nav(props) {
                     <Link to={`/store/jewelery`} className='linktt'> <p>jewelery</p> </Link>
                     <Link to={`/store/electronics`} className='linktt'> <p>electronics</p> </Link>
                     <Link to={`/store/women's clothing`} className='linktt'> <p>women's clothing</p> </Link>
-                    <p className='extarp'>                {(loggedIn) ?
+                    {/* <p className='extarp'>                {(loggedIn) ?
                         null :
                         <div>
                             <div className='p2'>
@@ -120,7 +120,7 @@ function Nav(props) {
                                 <Link to="/cart" className='linktt'><p className='navcart1'> <img src={cartImg} /> {itemCount} items {(totalPrice)}</p></Link>
                             </div>
                         </div>
-                    }</p>
+                    }</p> */}
                 </div>
             </div>
         </div>

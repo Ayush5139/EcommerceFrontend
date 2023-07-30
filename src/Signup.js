@@ -26,7 +26,7 @@ function Signup() {
     axios.post('https://ecommercebackend-4lkz.onrender.com/signup', { data: newObj })
       .then((res) => {setMessage(res.data.message);
         if(res.data.message=="User Registered"){
-          window.location.href = "http://localhost:3000/";
+          window.location.href = "https://stellar-fairy-dc26c4.netlify.app/";
           sessionStorage.setItem("sign","true")
         }
       })

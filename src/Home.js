@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom'
 import Banner from './Banner'
 import FeaturedItems from './FeaturedItems'
 import Footer from './Footer'
-import Login from './Login'
 import MainPage from './MainPage'
 import Nav from './Nav'
 import './Signup.css'
 import img from './iSHOP Logo.jpg'
+import cartImg from './bag_icon.jpg'
+import pofileImg from './profile_icon.jpg'
 
 function Home() {
   const [loginTab, setLoginTab] = useState(true)
@@ -20,7 +21,19 @@ function Home() {
   const [response, setResponse] = useState()
   const [loggedIn, setLoggedin] = useState(true)
   const [count, setCount] = useState(0)
-
+  const [carData, setCartdata] = useState([])
+  const [itemCount, setItemCount] = useState(0)
+  const [totalPrice, setTotalPrice] = useState(0)
+  useEffect(() => {
+    axios.get("https://ecommercebackend-4lkz.onrender.com/otherCartData")
+      .then((res) => setCartdata(res.data))
+  }, [count])
+  console.log(carData[0])
+  useEffect(() => {
+    setItemCount(carData[0])
+    setTotalPrice(carData[1])
+  }, [carData])
+  console.log(totalPrice)
   useEffect(() => {
     if (sessionStorage.getItem("USER") != "") {
       setLoginTab(true)
@@ -37,7 +50,7 @@ function Home() {
     //     console.log(allEle[i]);
     //   }
     // }
-  }, [count, sessionStorage.getItem("USER")])
+  }, [count])
 
   function abc123() {
     setLoginTab(false)
@@ -75,20 +88,38 @@ function Home() {
 
   useEffect(() => {
     if (sessionStorage.getItem("sign") === "true") {
+      console.log("signup sucessful")
       document.querySelector(".timedoutdiv").style.display = "block"
       setTimeout(() => {
         document.querySelector(".timedoutdiv").style.display = "none"
       }, 8000)
       sessionStorage.setItem("sign", "")
+      console.log("signup sucessful 2")
     }
   }, [])
+  const [userName, setUsernam] = useState("")
+  const userId = sessionStorage.getItem("USER")
+  useEffect(() => {
+    axios.get(`https://ecommercebackend-4lkz.onrender.com/${userId}`)
+      .then((res) => setUsernam(res.data[0].username))
+  }, [carData])
   return (
     <div>
       <div className='timedoutdiv'><p>Signup Successful</p></div>
+
       {(loginTab) ?
         <div>{(loggedIn) ?
           <div className='homediv1'>
-            <button onClick={abc123} className='loginbtn2'>Login</button></div> : null}
+            <button onClick={abc123} className='loginbtn2'>Login</button></div> : <div>
+            <div className='p2'>
+              <p className='navp1'> <img src={pofileImg} /> Hello. {userName}
+                <ul>
+                  <li onClick={logout} className="logoutbtn">Logout</li>
+                </ul>
+              </p>
+              <Link to="/cart" className='linktt'><p className='navcart1'> <img src={cartImg} /> {itemCount} items {(totalPrice)}</p></Link>
+            </div>
+          </div>}
           <Nav />
           <MainPage />
           <Banner />
@@ -108,7 +139,7 @@ function Home() {
               <Link to={"/user/signup"} className='linktt'><button className='signupbtn1'>Sign Up</button></Link>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </div>
       }
     </div>
